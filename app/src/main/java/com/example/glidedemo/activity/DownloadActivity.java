@@ -25,13 +25,13 @@ import java.util.concurrent.ExecutionException;
 *
 *
 * downloadOnly(int width, int height)：接收图片的宽度
-*    用于在子线程中下载图片
+*    用于在子线程中下载图片,downloadOnly(int width, int height)因为受RequestFutureTarget限制，必须在子线程运行。
 *    调用了downloadOnly(int width, int height)方法或会立即返回一个FutureTarget对象，然后Glide会在后台开始下载图片文件。
 *    接下来我们FutureTarget的get（）方法就可以获取到下载好的图片路径了。
 *
 *downloadOnly(Y target)：接收一个泛型对象
 *    用于在主线程中下载图片
-*   downloadOnly(Y target)的用法比较复杂一些，因为需要我们自己创建一个Target，而且必须实现顶层的Target接口，
+*   downloadOnly(Y target)的用法比较复杂一些，因为需要我们自己创建一个Target，不受RequestFutureTarget限制，而且必须实现顶层的Target接口，
 *   所以可以直接执行在主线程了。
 * */
 

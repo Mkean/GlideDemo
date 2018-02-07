@@ -40,6 +40,8 @@ public class BasisActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(IMG_URL)
                 .crossFade(3000)//淡入效果
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(mBasis);
 
         //占位图
@@ -91,7 +93,7 @@ public class BasisActivity extends AppCompatActivity {
         //圆角
         Glide.with(this)
                 .load(IMG_URL)
-                .bitmapTransform(new RoundedCornersTransformation(this, 70, 0, RoundedCornersTransformation.CornerType.ALL))
+                .bitmapTransform(new RoundedCornersTransformation(this, 70, 0, RoundedCornersTransformation.CornerType.BOTTOM))
                 .into(mCircleRoundView);
 
     }
