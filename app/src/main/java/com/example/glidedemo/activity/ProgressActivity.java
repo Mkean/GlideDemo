@@ -19,7 +19,10 @@ import com.example.glidedemo.utils.LoggingInterceptor;
 import com.example.glidedemo.utils.ProgressListener;
 
 import static com.example.glidedemo.R.id.progressDialog;
-
+/*
+* HttpUrlConnection的可扩展性比较有限，我们在它的基础之上无法实现监听下载进度的功能，
+* 所以可以HTTP通讯组件替换成OkHttp，然后依靠OkHttp强大的拦截器机制就可以实现进度监听了。
+* */
 public class ProgressActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String IMG_URL = "http://ww3.sinaimg.cn/large/610dc034jw1f837uocox8j20f00mggoo.jpg";
     public static final String IMG = "http://guolin.tech/book.png";

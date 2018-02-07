@@ -11,54 +11,54 @@
         android:id="@+id/basis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BasisActivity" />
+        android:text="基础用法" />
 
     <Button
         android:id="@+id/downloadOnly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DownloadActivity" />
+        android:text="获取文件路径" />
 
     <Button
         android:id="@+id/target"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TargetActivity" />
+        android:text="自定义Target" />
 
     <Button
         android:id="@+id/glideUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GlideUrlActivity" />
+        android:text="自定义图片路径" />
 
     <Button
         android:id="@+id/listener"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ListenerAndAnimationActivity" />
+        android:text="监听与动画" />
 
 
     <Button
         android:id="@+id/priority"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PriorityActivity" />
+        android:text="优先级" />
 
     <Button
         android:id="@+id/custom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CustomActivity" />
+        android:text="自定义模块" />
 
     <Button
         android:id="@+id/progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ProgressActivity" />
+        android:text="下载进度条" />
 
     <Button
         android:id="@+id/photoWall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PhotoWallActivity" />
+        android:text="照片墙" />
 </LinearLayout>
